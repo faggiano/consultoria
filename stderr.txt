@@ -1,0 +1,15 @@
+E: Unable to locate package docker
+E: Unable to locate package docker-engine
+E: Unable to locate package docker.io
+E: Couldn't find any package by glob 'docker.io'
+E: Couldn't find any package by regex 'docker.io'
+E: Unable to locate package docker
+E: Unable to locate package docker-engine
+E: Unable to locate package docker.io
+E: Couldn't find any package by glob 'docker.io'
+E: Couldn't find any package by regex 'docker.io'
+E: Unable to locate package docker
+E: Unable to locate package docker-engine
+E: Unable to locate package docker.io
+E: Couldn't find any package by glob 'docker.io'
+E: Couldn't find any package by regex 'docker.io'
