@@ -13,3 +13,51 @@ E: Unable to locate package docker-engine
 E: Unable to locate package docker.io
 E: Couldn't find any package by glob 'docker.io'
 E: Couldn't find any package by regex 'docker.io'
+E: Unable to locate package docker
+E: Unable to locate package docker-engine
+E: Unable to locate package docker.io
+E: Couldn't find any package by glob 'docker.io'
+E: Couldn't find any package by regex 'docker.io'
+W: Failed to fetch https://download.docker.com/linux/ubuntu/dists/xenial/InRelease  Could not resolve host: download.docker.com
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+E: Package 'docker-ce' has no installation candidate
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "pt_BR.UTF-8",
+	LC_MONETARY = "pt_BR.UTF-8",
+	LC_CTYPE = "pt_BR.UTF-8",
+	LC_COLLATE = "C",
+	LC_ADDRESS = "pt_BR.UTF-8",
+	LC_TELEPHONE = "pt_BR.UTF-8",
+	LC_NAME = "pt_BR.UTF-8",
+	LC_MEASUREMENT = "pt_BR.UTF-8",
+	LC_IDENTIFICATION = "pt_BR.UTF-8",
+	LC_NUMERIC = "pt_BR.UTF-8",
+	LC_PAPER = "pt_BR.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TIME = "pt_BR.UTF-8",
+	LC_MONETARY = "pt_BR.UTF-8",
+	LC_CTYPE = "pt_BR.UTF-8",
+	LC_COLLATE = "C",
+	LC_ADDRESS = "pt_BR.UTF-8",
+	LC_TELEPHONE = "pt_BR.UTF-8",
+	LC_NAME = "pt_BR.UTF-8",
+	LC_MEASUREMENT = "pt_BR.UTF-8",
+	LC_IDENTIFICATION = "pt_BR.UTF-8",
+	LC_NUMERIC = "pt_BR.UTF-8",
+	LC_PAPER = "pt_BR.UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
