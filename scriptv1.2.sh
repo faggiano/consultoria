@@ -2,8 +2,8 @@
 clear
 echo "Olah, este script configura proxy reverso utilizando nginx para um numero de aplicacoes em containeres httpd"
 echo "Por questao de seguranca e performance limitei a criacao para ateh 15 instancias"
-read -p "Digite quantas instancias httpd\'s serao levantadas: " arg1
-[[ $arg1 =~ (^[1-9]$|^1[0-5]$) ]] || { clear ; echo Valor invalido ; exit 1 ; }
+read -p "Digite quantas instancias httpd\'s serao levantadas: " i
+[[ $i =~ (^[1-9]$|^1[0-5]$) ]] || { clear ; echo Valor invalido ; exit 1 ; }
 echo "Removendo antigas instalações..."
 apt-get remove docker docker-engine docker.io --purge >> stdout.txt 2>> stderr.txt
 {
@@ -29,7 +29,7 @@ echo "Instalando nginx..."
 apt-get install nginx-full -y >> stdout.txt 2>> stderr.txt
 } && {
 echo "Configurando o sistema..."
-until (( $arg1 == 0 )); do
+until (( $i == 0 )); do
 	mkdir -p /www/app$i
 	echo "<h1>app$i</h1>" > /www/app$i/index.html
 	echo "127.0.0.1 app$i.dexter.com.br" >> /etc/hosts
@@ -44,7 +44,7 @@ server {
 	}
 }
 EOF
-((arg1--))
+((i--))
 done
 } && {
 echo "Reiniciando o nginx..."
