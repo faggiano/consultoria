@@ -52,8 +52,8 @@ echo "Reiniciando o nginx..."
 systemctl restart nginx
 } && {
 until (( $ii == 0 )); do
-	echo "curl http://app$i.dexter.com.br"
-	curl http://app$i.dexter.com.br
+	echo "curl http://app$ii.dexter.com.br"
+	curl http://app$ii.dexter.com.br
 	((ii--))
 done
 } || {
