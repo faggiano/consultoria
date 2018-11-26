@@ -50,9 +50,10 @@ done
 echo "Reiniciando o nginx..."
 systemctl restart nginx
 } && {
-for i in {1..3}; do
+until (( $i == 0 )); do
 	echo "curl http://app$i.dexter.com.br"
 	curl http://app$i.dexter.com.br
+	((i--))
 done
 } || {
 tail stderr.txt
